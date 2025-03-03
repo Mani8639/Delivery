@@ -31,7 +31,7 @@ log_delivery_distance = st.number_input("Log Delivery Distance", value=0.0)
 if st.button("Predict ETA"):
     input_features = np.array([[region_id, courier_id, lng, lat, aoi_id, aoi_type,
                                 accept_gps_lng, accept_gps_lat, delivery_gps_lng, delivery_gps_lat,
-                                distance, accept_time,delivery_distance,
+                                accept_time,delivery_distance,
                                 log_delivery_distance]])
     
     prediction = model.predict(input_features)
