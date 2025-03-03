@@ -8,7 +8,7 @@ import numpy as np
 model = pickle.load(open("model_delivery.pkl", "rb"))
 
 
-st.title("🚀 ETA Prediction with CatBoost of delivery")
+st.title("🚀 ETA Prediction of Delivery")
 st.write("Enter details to predict the Estimated Time of Arrival (ETA).")
 
 # Input fields
